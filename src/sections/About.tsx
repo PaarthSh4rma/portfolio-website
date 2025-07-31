@@ -20,16 +20,15 @@ export default function About() {
       <div className="flex flex-col md:flex-row items-center gap-12">
         {/* Hologram Portrait */}
 <motion.div
-  whileHover={{ scale: 1.05, rotate: 1 }}
-  transition={{ type: "spring", stiffness: 200 }}
   className="relative w-64 h-64 rounded-full overflow-hidden border-4 border-saberTeal/40 shadow-[0_0_30px_rgba(0,255,255,0.4)] hologram"
+  whileHover={{ scale: 1.05, rotate: 1 }}
+  transition={{ type: 'spring', stiffness: 200 }}
 >
   <img
     src={portrait}
     alt="Paarth Avatar"
-    className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-300"
+    className="w-full h-full object-cover grayscale hover:grayscale-0 transition duration-300 rounded-full"
   />
-  {/* Optional extra glow */}
   <div className="absolute inset-0 bg-saberTeal/10 backdrop-blur-sm animate-pulse pointer-events-none z-0" />
 </motion.div>
 

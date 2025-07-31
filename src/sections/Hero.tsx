@@ -7,7 +7,7 @@ export default function Hero() {
       id="hero"
       className="relative h-screen flex flex-col items-center justify-center overflow-hidden text-center px-4"
     >
-      {/* Starfield BG */}
+      {/* Starfield BG
       <div
         className="absolute inset-0 z-0 animate-pulseStars"
         style={{
@@ -15,7 +15,7 @@ export default function Hero() {
           backgroundSize: "2000px 2000px",
           backgroundRepeat: "repeat",
         }}
-      />
+      /> */}
 
       {/* Content */}
       <motion.h1

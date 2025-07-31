@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 const navLinks = [
   { name: "Home", to: "hero" },
   { name: "About", to: "about" },
+  {name: "Experience", to: "experience"},
   { name: "Projects", to: "projects" },
   { name: "Skills", to: "skills" },
   { name: "Contact", to: "contact" },
