@@ -1,0 +1,9 @@
+<!-- public/favicon.svg -->
+<svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <rect width="64" height="64" rx="12" fill="#000"/>
+  <text x="50%" y="55%" dominant-baseline="middle" text-anchor="middle"
+        font-family="Orbitron, sans-serif"
+        font-size="36" fill="#00FFFF" font-weight="bold">
+    PS
+  </text>
+</svg>
