@@ -43,6 +43,16 @@ export default function Navbar() {
       </Link>
     </li>
   ))}
+  <li>
+  <a
+    href="/Paarth_Resume.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-saberTeal transition"
+  >
+    My Resume
+  </a>
+</li>
 </ul>
 
 
