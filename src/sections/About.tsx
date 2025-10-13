@@ -35,7 +35,7 @@ export default function About() {
         >
           <p className="text-starWhite/90 leading-relaxed">
             I’m <span className="text-saberTeal font-semibold">Paarth Sharma</span> —
-            a Software Engineering student focused on building
+            a Software Engineering graduate focused on building
             <span className="text-saberTeal"> AI-driven</span> and
             <span className="text-saberTeal"> data-centric</span> products. I love turning
             messy real-world signals into clean, fast interfaces and scalable services.
