@@ -13,7 +13,7 @@ export default function About() {
           </h2>
         </div>
 
-        <div className="rounded-3xl border border-[var(--border-primary)] bg-[var(--bg-secondary)] p-6 md:p-8">
+        <div className="rounded-3xl border border-[var(--border-primary)] bg-[var(--bg-secondary)] p-6 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--border-hover)]">
           <p className="text-base leading-8 text-[var(--text-secondary)] md:text-lg">
             I’m a software engineering graduate who enjoys building systems that
             are both technically solid and genuinely useful. My work sits across

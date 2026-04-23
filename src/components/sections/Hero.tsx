@@ -4,7 +4,7 @@ import { profile } from "../../data/profile";
 export default function Hero() {
   return (
     <Section className="pt-16 md:pt-24">
-      <div className="grid gap-12 lg:grid-cols-[1.35fr_0.9fr] lg:items-start">
+      <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
         <div className="space-y-8">
           <p className="text-sm uppercase tracking-[0.2em] text-[var(--text-muted)]">
             Software Engineer

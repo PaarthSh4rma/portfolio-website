@@ -42,7 +42,7 @@ export default function Projects() {
                           href={project.github}
                           target="_blank"
                           rel="noreferrer"
-                          className="inline-flex items-center justify-center rounded-full border border-[var(--border-primary)] px-4 py-2 text-sm font-medium text-[var(--text-primary)] transition-all hover:border-[var(--accent)] hover:text-[var(--accent)]"
+                          className="inline-flex items-center justify-center rounded-full border border-[var(--border-primary)] px-4 py-2 text-sm font-medium text-[var(--text-primary)] transition-all duration-200 hover:border-[var(--accent)] hover:text-[var(--accent)]"
                         >
                           GitHub
                         </a>

@@ -21,7 +21,7 @@ export default function Experience() {
           {experience.map((item) => (
             <div
               key={item.company}
-              className="rounded-3xl border border-[var(--border-primary)] bg-[var(--bg-secondary)] p-6 md:p-8"
+              className="rounded-3xl border border-[var(--border-primary)] bg-[var(--bg-secondary)] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--border-hover)]"
             >
               <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
                 <div className="space-y-2">

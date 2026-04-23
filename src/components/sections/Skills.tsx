@@ -22,7 +22,7 @@ export default function Skills() {
           {skillGroups.map((group) => (
             <div
               key={group.category}
-              className="rounded-3xl border border-[var(--border-primary)] bg-[var(--bg-secondary)] p-6 md:p-8"
+              className="rounded-3xl border border-[var(--border-primary)] bg-[var(--bg-secondary)] p-6 md:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-[var(--border-hover)]"
             >
               <div className="space-y-5">
                 <h3 className="text-lg font-semibold tracking-tight md:text-xl">
