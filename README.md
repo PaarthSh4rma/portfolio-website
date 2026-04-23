@@ -1,4 +1,6 @@
 # Paarth Sharma — Portfolio
+[![CI](https://github.com/PaarthSh4rma/portfolio-website/actions/workflows/ci.yml/badge.svg)](https://github.com/PaarthSh4rma/portfolio-website/actions)
+![Tech](https://img.shields.io/badge/stack-React%20%7C%20TypeScript%20%7C%20Tailwind-blue)
 
 Professional portfolio website built with React, TypeScript, Vite, and Tailwind CSS.
 
