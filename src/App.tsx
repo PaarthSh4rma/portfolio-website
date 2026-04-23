@@ -1,31 +1,27 @@
-// import { useState } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
-import Hero from "./sections/Hero";
-import Navbar from "./components/Navbar";
-import Projects from "./sections/Projects";
-import Skills from "./sections/Skills";
-import About from "./sections/About";
-import Contact from "./sections/Contact";
-import Experience from "./sections/Experience";
-import Starfield from "./components/Starfield";
-import CustomCursor from "./components/CustomCursor";
-
+import Navbar from "./components/layout/Navbar";
+import Footer from "./components/layout/Footer";
+import Hero from "./components/sections/Hero";
+import Experience from "./components/sections/Experience";
+import Projects from "./components/sections/Projects";
+import Skills from "./components/sections/Skills";
+import About from "./components/sections/About";
+import Contact from "./components/sections/Contact";
 
 function App() {
   return (
-    <div className="relative bg-hyperspace text-white">
-      <CustomCursor />
-      <Starfield />
+    <main
+      id="top"
+      className="min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)]"
+    >
       <Navbar />
       <Hero />
-      <About />
       <Experience />
       <Projects />
       <Skills />
+      <About />
       <Contact />
-    </div>
+      <Footer />
+    </main>
   );
 }
 
