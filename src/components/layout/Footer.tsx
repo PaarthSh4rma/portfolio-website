@@ -13,7 +13,7 @@ export default function Footer() {
               href={profile.github}
               target="_blank"
               rel="noreferrer"
-              className="transition-colors hover:text-[var(--accent)]"
+              className="inline-flex min-h-11 items-center transition-colors hover:text-[var(--accent)]"
             >
               GitHub
             </a>
@@ -21,7 +21,7 @@ export default function Footer() {
               href={profile.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="transition-colors hover:text-[var(--accent)]"
+              className="inline-flex min-h-11 items-center transition-colors hover:text-[var(--accent)]"
             >
               LinkedIn
             </a>
@@ -29,7 +29,7 @@ export default function Footer() {
               href={profile.resume}
               target="_blank"
               rel="noreferrer"
-              className="transition-colors hover:text-[var(--accent)]"
+              className="inline-flex min-h-11 items-center transition-colors hover:text-[var(--accent)]"
             >
               Resume
             </a>

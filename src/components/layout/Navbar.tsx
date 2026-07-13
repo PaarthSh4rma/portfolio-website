@@ -15,10 +15,10 @@ export default function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-[var(--border-primary)] bg-[rgba(10,10,15,0.75)] backdrop-blur-md">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 md:px-8 lg:px-10">
+      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4 sm:px-6 md:px-8 lg:px-10">
         <a
           href="#top"
-          className="text-sm font-medium tracking-[0.08em] text-[var(--text-primary)] transition-colors hover:text-[var(--accent)]"
+          className="inline-flex min-h-11 items-center text-sm font-medium tracking-[0.08em] text-[var(--text-primary)] transition-colors hover:text-[var(--accent)]"
           onClick={handleLinkClick}
         >
           PAARTH SHARMA
@@ -29,7 +29,7 @@ export default function Navbar() {
             <a
               key={link.label}
               href={link.href}
-              className="text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
+              className="inline-flex min-h-11 items-center text-sm text-[var(--text-secondary)] transition-colors hover:text-[var(--text-primary)]"
             >
               {link.label}
             </a>
@@ -39,7 +39,7 @@ export default function Navbar() {
             href="/Paarth_Sharma_resume.pdf"
             target="_blank"
             rel="noreferrer"
-            className="rounded-full border border-[var(--accent)] px-4 py-2 text-sm font-medium text-[var(--accent)] transition-all hover:bg-[rgba(16,7,250,0.08)]"
+            className="inline-flex min-h-11 items-center rounded-full border border-[var(--accent)] px-4 py-2 text-sm font-medium text-[var(--accent)] transition-colors hover:bg-[rgba(16,7,250,0.08)]"
           >
             Resume
           </a>
@@ -47,18 +47,19 @@ export default function Navbar() {
 
         <button
           type="button"
-          className="inline-flex items-center justify-center rounded-full border border-[var(--border-primary)] px-4 py-2 text-sm text-[var(--text-primary)] transition-all hover:border-[var(--accent)] hover:text-[var(--accent)] md:hidden"
+          className="inline-flex min-h-11 items-center justify-center rounded-full border border-[var(--border-primary)] px-4 py-2 text-sm text-[var(--text-primary)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)] md:hidden"
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label="Toggle navigation menu"
           aria-expanded={menuOpen}
+          aria-controls="mobile-navigation"
         >
           Menu
         </button>
       </div>
 
       {menuOpen && (
-        <div className="border-t border-[var(--border-primary)] md:hidden">
-          <div className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-6 py-4">
+        <div id="mobile-navigation" className="border-t border-[var(--border-primary)] md:hidden">
+          <nav aria-label="Mobile navigation" className="mx-auto flex w-full max-w-6xl flex-col gap-2 px-5 py-4 sm:px-6">
             {links.map((link) => (
               <a
                 key={link.label}
@@ -79,7 +80,7 @@ export default function Navbar() {
             >
               Resume
             </a>
-          </div>
+          </nav>
         </div>
       )}
     </header>
