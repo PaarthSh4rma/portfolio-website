@@ -6,15 +6,15 @@ export type SkillGroup = {
 export const skillGroups: SkillGroup[] = [
   {
     category: "Languages",
-    items: ["Python", "TypeScript", "SQL", "Java", "C/C++"],
+    items: ["Python", "TypeScript", "JavaScript", "SQL", "Java", "C/C++"],
   },
   {
     category: "Backend & APIs",
-    items: ["FastAPI", "Node.js", "REST APIs", "SQLAlchemy"],
+    items: ["FastAPI", "REST APIs", "SQLAlchemy", "Pydantic", "Alembic"],
   },
   {
     category: "Frontend",
-    items: ["React", "Tailwind CSS", "Vite"],
+    items: ["React", "Next.js", "Tailwind CSS", "Vite"],
   },
   {
     category: "Cloud & DevOps",
@@ -22,10 +22,17 @@ export const skillGroups: SkillGroup[] = [
   },
   {
     category: "Databases",
-    items: ["PostgreSQL", "MySQL", "MongoDB", "Supabase"],
+    items: ["PostgreSQL", "SQLite", "Supabase", "Pinecone"],
   },
   {
-    category: "Data & ML",
-    items: ["XGBoost", "scikit-learn", "Pandas", "NumPy", "SHAP", "Feature Engineering"],
+    category: "Data & Applied AI",
+    items: [
+      "Pandas",
+      "NumPy",
+      "scikit-learn",
+      "XGBoost",
+      "SHAP",
+      "SentenceTransformers",
+    ],
   },
 ];

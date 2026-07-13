@@ -5,17 +5,28 @@ export default function Projects() {
   return (
     <Section id="projects">
       <div className="space-y-12">
-        <div className="max-w-3xl space-y-4">
-          <p className="text-sm uppercase tracking-[0.2em] text-[var(--text-muted)]">
-            Selected Work
-          </p>
-          <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
-            Projects that show how I build.
-          </h2>
-          <p className="text-base leading-8 text-[var(--text-secondary)] md:text-lg">
-            A selection of work across full-stack systems, cloud infrastructure,
-            and applied machine learning.
-          </p>
+        <div className="flex flex-col gap-6 md:flex-row md:items-end md:justify-between">
+          <div className="max-w-3xl space-y-4">
+            <p className="text-sm uppercase tracking-[0.2em] text-[var(--text-muted)]">
+              Selected Work
+            </p>
+            <h2 className="text-3xl font-semibold tracking-tight md:text-5xl">
+              Projects that show how I build.
+            </h2>
+            <p className="text-base leading-8 text-[var(--text-secondary)] md:text-lg">
+              Evidence-backed work across full-stack systems, backend architecture,
+              deployment, simulation, and applied AI.
+            </p>
+          </div>
+
+          <a
+            href="https://github.com/PaarthSh4rma"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-flex min-h-11 shrink-0 items-center justify-center self-start rounded-full border border-[var(--border-primary)] px-5 py-3 text-sm font-medium text-[var(--text-primary)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)] md:self-auto"
+          >
+            View all projects on GitHub
+          </a>
         </div>
 
         <div className="space-y-6">
@@ -36,13 +47,13 @@ export default function Projects() {
                   </div>
 
                   {(project.github || project.live) && (
-                    <div className="flex flex-wrap gap-3">
+                    <div className="flex shrink-0 flex-wrap gap-3">
                       {project.github && (
                         <a
                           href={project.github}
                           target="_blank"
                           rel="noreferrer"
-                          className="inline-flex items-center justify-center rounded-full border border-[var(--border-primary)] px-4 py-2 text-sm font-medium text-[var(--text-primary)] transition-all duration-200 hover:border-[var(--accent)] hover:text-[var(--accent)]"
+                          className="inline-flex min-h-11 items-center justify-center rounded-full border border-[var(--border-primary)] px-4 py-2 text-sm font-medium text-[var(--text-primary)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
                         >
                           GitHub
                         </a>
@@ -53,7 +64,7 @@ export default function Projects() {
                           href={project.live}
                           target="_blank"
                           rel="noreferrer"
-                          className="inline-flex items-center justify-center rounded-full border border-[var(--accent)] px-4 py-2 text-sm font-medium text-[var(--accent)] transition-all hover:bg-[rgba(16,7,250,0.08)]"
+                          className="inline-flex min-h-11 items-center justify-center rounded-full border border-[var(--accent)] px-4 py-2 text-sm font-medium text-[var(--accent)] transition-colors hover:bg-[rgba(16,7,250,0.08)]"
                         >
                           Live Demo
                         </a>

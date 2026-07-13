@@ -4,14 +4,14 @@ import { profile } from "../../data/profile";
 export default function Hero() {
   return (
     <Section className="pt-16 md:pt-24">
-      <div className="grid gap-12 lg:grid-cols-[1.2fr_0.8fr] lg:items-start">
+      <div className="grid gap-12 xl:grid-cols-[1.2fr_0.8fr] xl:items-start">
         <div className="space-y-8">
           <p className="text-sm uppercase tracking-[0.2em] text-[var(--text-muted)]">
             Software Engineer
           </p>
 
           <div className="space-y-5">
-            <h1 className="max-w-4xl text-4xl font-semibold tracking-tight md:text-6xl lg:text-7xl lg:leading-[0.98]">
+            <h1 className="max-w-4xl text-4xl font-semibold tracking-tight sm:text-5xl md:text-6xl xl:text-7xl xl:leading-[0.98]">
               {profile.headline}
             </h1>
 
@@ -23,7 +23,7 @@ export default function Hero() {
           <div className="flex flex-col gap-4 sm:flex-row sm:items-center">
             <a
               href="#projects"
-              className="inline-flex items-center justify-center rounded-full border border-[var(--border-primary)] px-5 py-3 text-sm font-medium text-[var(--text-primary)] transition-all hover:border-[var(--accent)] hover:text-[var(--accent)]"
+              className="inline-flex min-h-11 items-center justify-center rounded-full border border-[var(--border-primary)] px-5 py-3 text-sm font-medium text-[var(--text-primary)] transition-colors hover:border-[var(--accent)] hover:text-[var(--accent)]"
             >
               View Projects
             </a>
@@ -32,7 +32,7 @@ export default function Hero() {
               href={profile.resume}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center rounded-full border border-[var(--accent)] px-5 py-3 text-sm font-medium text-[var(--accent)] transition-all hover:bg-[rgba(16,7,250,0.08)]"
+              className="inline-flex min-h-11 items-center justify-center rounded-full border border-[var(--accent)] px-5 py-3 text-sm font-medium text-[var(--accent)] transition-colors hover:bg-[rgba(16,7,250,0.08)]"
             >
               Download Resume
             </a>
@@ -43,7 +43,7 @@ export default function Hero() {
               href={profile.github}
               target="_blank"
               rel="noreferrer"
-              className="transition-colors hover:text-[var(--accent)]"
+              className="inline-flex min-h-11 items-center transition-colors hover:text-[var(--accent)]"
             >
               GitHub
             </a>
@@ -51,7 +51,7 @@ export default function Hero() {
               href={profile.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="transition-colors hover:text-[var(--accent)]"
+              className="inline-flex min-h-11 items-center transition-colors hover:text-[var(--accent)]"
             >
               LinkedIn
             </a>
