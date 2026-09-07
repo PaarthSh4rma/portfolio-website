@@ -3,12 +3,12 @@ import { profile } from "../../data/profile";
 
 export default function Hero() {
   return (
-    <section id="top" className="hero" aria-labelledby="hero-title">
+    <section id="portfolio-intro" className="hero" aria-labelledby="hero-title">
       <Container>
         <div className="hero__grid">
           <div className="hero__main">
             <p className="eyebrow">Software engineer · Melbourne</p>
-            <h1 id="hero-title">{profile.headline}</h1>
+            <h2 id="hero-title">{profile.headline}</h2>
             <p className="hero__summary">{profile.summary}</p>
             <div className="hero__actions" aria-label="Primary links">
               <a className="button button--primary" href="#work">View work ↓</a>

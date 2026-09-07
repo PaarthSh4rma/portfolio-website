@@ -7,7 +7,8 @@ describe("portfolio", () => {
   it("presents the core positioning and selected work", () => {
     render(<App />);
 
-    expect(screen.getByRole("heading", { level: 1 })).toHaveTextContent(
+    expect(screen.getByRole("heading", { level: 1 })).toHaveAccessibleName("Paarth Sharma");
+    expect(screen.getByRole("heading", { level: 2, name: "I turn messy problems into working software." })).toHaveTextContent(
       "I turn messy problems into working software.",
     );
 

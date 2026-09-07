@@ -1,5 +1,6 @@
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
+import Landing from "./components/sections/Landing";
 import Hero from "./components/sections/Hero";
 import Projects from "./components/sections/Projects";
 import Experience from "./components/sections/Experience";
@@ -16,6 +17,7 @@ function App() {
       </a>
       <Navbar />
       <main id="main-content">
+        <Landing />
         <Hero />
         <Projects />
         <Experience />
