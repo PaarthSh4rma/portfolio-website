@@ -1,8 +1,10 @@
 export type ExperienceItem = {
   company: string;
   role: string;
+  context?: string;
   period: string;
-  bullets: string[];
+  summary: string;
+  highlights: string[];
 };
 
 export const experience: ExperienceItem[] = [
@@ -10,20 +12,25 @@ export const experience: ExperienceItem[] = [
     company: "Origin Energy",
     role: "Customer Insights Intern",
     period: "Jul 2024 — Dec 2024",
-    bullets: [
-      "Built and maintained Python and SQL pipelines processing 10k–50k+ customer records for forecasting, reporting, and analytics.",
-      "Developed and evaluated an XGBoost credit-risk model on 100k+ records, achieving approximately 80% precision on high-risk predictions.",
-      "Used stakeholder-informed feature engineering and SHAP analysis to explain risk drivers, then reduced workflow runtime by approximately 30% with multiprocessing.",
+    summary:
+      "Worked across customer data, modelling, explainability, and stakeholder decision-making in an operational energy context.",
+    highlights: [
+      "Built Python and SQL workflows processing 10k–50k+ customer records for forecasting, reporting, and analytics.",
+      "Developed and evaluated an XGBoost credit-risk model on 100k+ records, reaching approximately 80% precision on high-risk predictions.",
+      "Used stakeholder-informed features and SHAP to explain risk drivers, then reduced workflow runtime by approximately 30% with multiprocessing.",
     ],
   },
   {
     company: "Monash University",
-    role: "Engineering Lab Tutor",
+    role: "Teaching Associate",
+    context: "Engineering Smart Systems",
     period: "Jul 2023 — Present",
-    bullets: [
-      "Delivered Python programming, Arduino, and embedded systems labs for 100+ engineering students.",
-      "Taught debugging, software fundamentals, and systems thinking across 700+ hours of lab delivery.",
-      "Mentored students through software, hardware, and integration issues using structured debugging workflows.",
+    summary:
+      "Help engineering students connect software, electronics, and systems thinking through practical labs and debugging.",
+    highlights: [
+      "Delivered 700+ hours of Python, Arduino, and embedded-systems teaching for 100+ students.",
+      "Diagnosed code, circuit, and integration failures while teaching a repeatable debugging process.",
+      "Explained technical trade-offs to students with different levels of programming and hardware experience.",
     ],
   },
 ];

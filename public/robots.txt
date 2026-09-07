@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://paarth-sharma.com/sitemap.xml

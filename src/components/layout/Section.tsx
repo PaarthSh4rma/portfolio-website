@@ -4,18 +4,33 @@ import Container from "./Container";
 type SectionProps = PropsWithChildren<{
   id?: string;
   className?: string;
-  containerClassName?: string;
+  label?: string;
+  title?: string;
+  intro?: string;
 }>;
 
 export default function Section({
   id,
   className = "",
-  containerClassName = "",
+  label,
+  title,
+  intro,
   children,
 }: SectionProps) {
   return (
-    <section id={id} className={`scroll-mt-20 py-20 md:py-24 ${className}`}>
-      <Container className={containerClassName}>{children}</Container>
+    <section id={id} className={`section ${className}`.trim()}>
+      <Container>
+        {(label || title || intro) && (
+          <header className="section-heading">
+            {label && <p className="eyebrow">{label}</p>}
+            <div className="section-heading__copy">
+              {title && <h2>{title}</h2>}
+              {intro && <p>{intro}</p>}
+            </div>
+          </header>
+        )}
+        {children}
+      </Container>
     </section>
   );
 }

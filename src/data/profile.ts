@@ -1,16 +1,16 @@
 export const profile = {
   name: "Paarth Sharma",
-  headline: "Software engineer building reliable full-stack, backend, and cloud-powered products.",
+  headline: "I turn messy problems into working software.",
   summary:
-    "I build practical web applications, APIs, data workflows, and applied AI systems — with an emphasis on clean execution, engineering discipline, and real-world usefulness.",
+    "Software engineer building useful systems end-to-end — from product interfaces and APIs to data, applied AI, cloud integration, and deployment.",
   location: "Melbourne, Australia",
   email: "paarth.sharma.3110@gmail.com",
   github: "https://github.com/PaarthSh4rma",
   linkedin: "https://www.linkedin.com/in/paarthsharma16/",
   resume: "/Paarth_Sharma_resume.pdf",
   proofPoints: [
-    "Software Engineering graduate from Monash University",
-    "Built data and ML workflows on 100k+ customer records at Origin Energy",
-    "700+ hours teaching Python and embedded systems",
+    { value: "100k+", label: "records in Origin Energy modelling work" },
+    { value: "~30%", label: "runtime reduction through multiprocessing" },
+    { value: "700+", label: "hours teaching engineering systems" },
   ],
 };
