@@ -26,7 +26,7 @@ export default function Hero() {
 
           <aside className="hero__proof" aria-label="Selected evidence">
             <p className="hero__proof-intro">
-              Monash Software Engineering graduate with experience spanning product, data, and technical teaching.
+              Software engineer at Orbit Reporting + Analytics. Monash Software Engineering graduate with Distinction.
             </p>
             <dl>
               {profile.proofPoints.map((point) => (

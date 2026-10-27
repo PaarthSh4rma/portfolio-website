@@ -11,6 +11,8 @@ describe("portfolio", () => {
     expect(screen.getByRole("heading", { level: 2, name: "I turn messy problems into working software." })).toHaveTextContent(
       "I turn messy problems into working software.",
     );
+    expect(screen.getByRole("heading", { name: "Software Engineer" })).toBeInTheDocument();
+    expect(screen.getAllByText("Orbit Reporting + Analytics").length).toBeGreaterThan(0);
 
     for (const project of ["Trackline", "ClientOps Copilot", "Outside Edge", "BirdTag"]) {
       expect(screen.getByRole("heading", { name: project })).toBeInTheDocument();

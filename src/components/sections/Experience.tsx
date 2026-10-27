@@ -22,9 +22,11 @@ export default function Experience() {
             </div>
             <div className="experience-item__body">
               <p className="experience-summary">{item.summary}</p>
-              <ul>
-                {item.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}
-              </ul>
+              {item.highlights.length > 0 && (
+                <ul>
+                  {item.highlights.map((highlight) => <li key={highlight}>{highlight}</li>)}
+                </ul>
+              )}
             </div>
           </article>
         ))}

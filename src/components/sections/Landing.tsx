@@ -11,7 +11,7 @@ export default function Landing() {
               <span aria-hidden="true">Paarth</span>
               <span aria-hidden="true">Sharma</span>
             </h1>
-            <p>Software engineer building<br />useful systems end-to-end.</p>
+            <p>Production-minded AI,<br />backend and data systems.</p>
             <span className="landing__location">{profile.location}</span>
           </div>
 

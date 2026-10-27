@@ -9,7 +9,7 @@ export default function Contact() {
         <div className="contact__grid">
           <h2 id="contact-title">Have a useful problem to solve?</h2>
           <div className="contact__copy">
-            <p>I’m open to software engineering roles across product, backend, applied AI, and data-focused teams.</p>
+            <p>I’m always interested in thoughtful conversations about software, applied AI, backend systems, and useful products.</p>
             <a className="contact__email" href={`mailto:${profile.email}`}>
               {profile.email} <span aria-hidden="true">↗</span>
             </a>

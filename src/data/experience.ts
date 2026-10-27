@@ -9,6 +9,14 @@ export type ExperienceItem = {
 
 export const experience: ExperienceItem[] = [
   {
+    company: "Orbit Reporting + Analytics",
+    role: "Software Engineer",
+    period: "Present",
+    summary:
+      "Building production-minded software in an enterprise reporting and analytics environment that connects ERP and business-application data to real-time decisions.",
+    highlights: [],
+  },
+  {
     company: "Origin Energy",
     role: "Customer Insights Intern",
     period: "Jul 2024 — Dec 2024",
